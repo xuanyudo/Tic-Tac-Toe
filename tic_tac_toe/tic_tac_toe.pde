@@ -12,7 +12,7 @@
 void setup(){
   size(480,540);
   startScene();
-  drawInGameScene();
+  mousePressed();
 }
 
 void startScene(){
@@ -66,10 +66,35 @@ void drawCircle(int x,int y, int size){
 }
 
 void drawInGameScene(){
+  background(255,255,255);
+  line(0,0,480,0);
+  line(0,160,480,160);
+  line(0,320,480,320);
+  line(0,480,480,480);
+  line(160,0,160,480);
+  line(320,0,320,480);
+  fill(255,0,0);
+  textSize(25);
+  text("Player 1:",60,520);
+  fill(0,0,255);
+  text("Player 2:",350,520);
+  
 
 }
 
 void draw(){
   
   
+}
+
+void mousePressed(){
+  if((mouseX>=140)&&(mouseX<=340)&&(mouseY>=180)&&(mouseY<=230)){
+     drawInGameScene();
+  }
+  else if((mouseX>=140)&&(mouseX<=340)&&(mouseY>=270)&&(mouseY<=320)){
+     drawInGameScene();
+  }
+  else if((mouseX>=140)&&(mouseX<=340)&&(mouseY>=360)&&(mouseY<=410)){
+     drawInGameScene();
+  }
 }
