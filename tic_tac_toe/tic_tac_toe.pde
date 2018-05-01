@@ -109,7 +109,7 @@ void drawInGameScene() {
   drawCross(150, 510, 10, 0, #ff0000);
   fill(0, 0, 255);//set text color for player 2 as blue
   drawCircle(390, 510, 25, #0000ff);
-  text("Player 2:", 330, 520);//call text for player 2 in display
+  text("Player 2:", 300, 520);//call text for player 2 in display
 
 }
 
